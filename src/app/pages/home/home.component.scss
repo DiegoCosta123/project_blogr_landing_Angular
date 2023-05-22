@@ -1,0 +1,152 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+@font-face {
+   font-family: 'Overpass_Lato';
+   src: url('../../../assets/fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+   font-family: 'Ubuntu_Regular';
+   src: url('../../../assets/fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+   font-family: 'Ubuntu_Medium';
+   src: url('../../../assets/fonts/Ubuntu-Medium.ttf');
+}
+
+#blogr_main {
+   height: 100vh;
+
+   .page_main {
+       height: 100vh;
+       padding: 100px;
+
+       .title_designed {
+           text-align: center;
+           color: hsl(208, 49%, 24%);
+           font-family: 'Ubuntu_Medium';
+       }
+
+       .img_circle {
+           max-width: 580px;
+           position: absolute;
+           right: 0;
+           top: 450px;
+       }
+
+       .designed_future_container {
+           width: 100%;
+           max-width: 530px;
+           margin-top: 70px;
+
+           .text_two_content {
+               margin-top: 55px;
+           }
+
+           .title_intro_content {
+               color: hsl(208, 49%, 24%);
+               font-family: 'Overpass_Lato';
+               font-weight: 600;
+           }
+
+           .paragraph_content {
+               color: hsl(208, 49%, 24%);
+               font-family: 'Overpass_Lato';
+           }
+       }
+   }
+
+   .page_two {
+       height: 85vh;
+       margin-top: 50px;
+       position: relative;
+       
+       .header_phones {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           width: 100%;
+           height: 410px;
+           padding: 0 120px;
+           background-color: hsl(237, 23%, 32%);
+           border-bottom-left-radius: 100px;
+           border-top-right-radius: 100px;
+
+           .img_phones {
+               margin-top: 35px;
+           }
+
+           .text_phone {
+               max-width: 500px;
+               color: hsl(0, 0%, 100%);
+               
+               .title_state {
+                   font-family: 'Overpass_Lato';
+                   font-weight: 600;
+               }
+
+               .description_state {
+                   font-family: 'Ubuntu_Regular';
+               }
+           }
+       }
+   }
+
+   .page_three {
+       height: 100vh;
+
+       
+       .laptod_container {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           padding: 0 6rem 0 0;
+
+           .img_laptod {
+               max-width: 580px;
+               left: 0;
+           }
+
+           .text_free {
+               max-width: 500px;
+
+               .title_descr_simple {
+                  
+                  .title_simple {
+                     color: hsl(208, 49%, 24%);
+                     font-family: 'Overpass_Lato';
+                     font-weight: 600;
+                  }
+
+                  .description_simple {
+                     color: hsl(208, 49%, 24%);
+                     font-family: 'Overpass_Lato';
+                     margin-top: 15px;
+                  }
+               }
+
+               .title_descr_powerful {
+                  margin-top: 80px;
+
+                  .title_powerful {
+                     color: hsl(208, 49%, 24%);
+                     font-family: 'Overpass_Lato';
+                     font-weight: 600;
+                  }
+
+                  .description_powerful {
+                     color: hsl(208, 49%, 24%);
+                     font-family: 'Overpass_Lato';
+                     margin-top: 15px;
+                  }
+               }
+           }
+       }
+   }
+}
+
