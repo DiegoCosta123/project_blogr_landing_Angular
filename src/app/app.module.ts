@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTreeModule} from '@angular/material/tree';
 import { MatIconModule } from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {MatMenuModule} from '@angular/material/menu';
     NavFooterComponent,
     NavHeaderComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    NavMenuComponent
   ],
   imports: [
     BrowserModule,

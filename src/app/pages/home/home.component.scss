@@ -26,6 +26,12 @@
        height: 100vh;
        padding: 100px;
 
+       @media screen and (max-width: 1500px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+
        .title_designed {
            text-align: center;
            color: hsl(208, 49%, 24%);
@@ -37,12 +43,23 @@
            position: absolute;
            right: 0;
            top: 450px;
+
+           @media screen and (max-width: 1084px) {
+                width: 100%;
+                max-width: 30rem !important;
+                position: unset;
+                margin-top: 30px;
+           }
        }
 
        .designed_future_container {
            width: 100%;
            max-width: 530px;
            margin-top: 70px;
+
+           @media screen and (max-width: 1084px) {
+              text-align: center;            
+           }
 
            .text_two_content {
                margin-top: 55px;
@@ -65,6 +82,10 @@
        height: 85vh;
        margin-top: 50px;
        position: relative;
+
+       @media screen and (max-width: 1084px) {
+            margin-top: 780px;
+       }
        
        .header_phones {
            display: flex;
@@ -77,8 +98,20 @@
            border-bottom-left-radius: 100px;
            border-top-right-radius: 100px;
 
+           @media screen and (max-width: 956px) {
+                flex-direction: column;
+                height: 500px;
+                justify-content: center; 
+           }
+
            .img_phones {
                margin-top: 35px;
+
+               @media screen and (max-width: 956px) {
+                margin-top: -340px;
+                max-width: 30rem !important;
+                width: 100%;
+               }
            }
 
            .text_phone {
@@ -88,6 +121,7 @@
                .title_state {
                    font-family: 'Overpass_Lato';
                    font-weight: 600;
+                   
                }
 
                .description_state {
@@ -100,6 +134,10 @@
    .page_three {
        height: 100vh;
 
+       @media screen and (max-width: 956px) {
+            height: 160vh;
+            margin-top: 100px;
+       }
        
        .laptod_container {
            display: flex;
@@ -107,13 +145,30 @@
            justify-content: space-between;
            padding: 0 6rem 0 0;
 
+           @media screen and (max-width: 956px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 0;
+           }
+
            .img_laptod {
                max-width: 580px;
                left: 0;
+
+               @media screen and (max-width: 956px) {
+                width: 100%;
+                max-width: 30rem !important;
+           }
            }
 
            .text_free {
                max-width: 500px;
+
+               @media screen and (max-width: 956px) {
+                    margin-top: 50px;
+               }
 
                .title_descr_simple {
                   

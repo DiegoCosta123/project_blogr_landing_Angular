@@ -28,10 +28,21 @@
    border-top-right-radius: 6rem;
    padding: 70px 250px 50px 110px;
 
+   @media screen and (max-width: 712px) {
+      padding: 70px 50px;
+      height: 100%;
+   }
+
    .footer_container {
       display: flex;
       justify-content: space-between;
       color: hsl(0, 0%, 100%);
+
+      @media screen and (max-width: 712px) {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
 
       .logo_content {
          font-family: 'Overpass_Lato';
@@ -41,6 +52,10 @@
       .type_option {
          display: flex;
          flex-direction: column;
+
+         @media screen and (max-width: 712px) {
+            margin-top: 20px;
+         }
 
          .option_content {
             display: flex;

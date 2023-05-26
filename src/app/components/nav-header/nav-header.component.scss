@@ -23,146 +23,181 @@
    background-image: url("../../../assets/imagens/bg-pattern-intro-desktop.svg");
    background-size: cover;
    border-bottom-left-radius: 6rem;
-   padding: 50px 100px;
+   padding: 50px 50px;
 
-   .header_container {
-       display: flex;
-       justify-content: space-between;
-
-       .header_content {
-           display: flex;
-           justify-content: center;
-
-           .logo_content {
-               font-family: 'Overpass_Lato';
-               color: hsl(0, 0%, 100%);
-               font-size: 1.8rem !important;
-               font-weight: 600;
-           }
-   
-           .data_adm {
-               display: flex;
-               gap: 30px;
-               align-items: center;
-               justify-content: center;
-               margin-left: 100px;
-   
-               .btn_option{
-                   display: flex;
-                   justify-content: center;
-                   align-items: center;
-                   border: 0px solid;
-                   background-color: transparent;
-                   color: hsl(0, 0%, 100%);
-                   font-family: 'Overpass_Lato';
-                   cursor: pointer;
-               }
-
-               .btn_option:hover {
-                   text-decoration: underline;
-               }
-   
-               .menu_content {
-                   font-size: 0.2rem !important;
-                   font-family: 'Overpass_Lato';
-               }
-           }
-   
-       }
-
-       .login_container {
-
-           .login {
-               color: hsl(0, 0%, 100%);
-               font-family: 'Overpass_Lato';
-               text-decoration: none;
-               
-               .login:hover {
-                   text-decoration: underline;
-               }
-           }
-
-
-           .btn_up {
-               width: 95px;
-               height: 35px;
-               border: 0px solid;
-               background-color: hsl(0, 0%, 100%);
-               color: hsl(353, 100%, 62%);
-               font-family: 'Overpass_Lato';
-               font-weight: 600;
-               border-radius: 50px;
-               margin-left: 25px;    
-               cursor: pointer;
-           }
-
-           .btn_up:hover {
-               background-color: hsl(355, 100%, 74%);
-               color: hsl(0, 0%, 100%);
-           }
-
-       }
+   @media screen and (max-width: 557px) {
+      height: 470px;
    }
 
+   .menu_main {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
 
-   .title_container {
-       text-align: center;
-       color: hsl(0, 0%, 100%);
-       margin-top: 80px;
+        @media screen and (max-width: 814px) {
+            display: flex;
+            justify-content: space-between;
+        }
        
-       .title_content {
-           font-family: 'Ubuntu_Regular';
-           font-size: 2.5rem !important;
+       .logo_content {
+           font-family: 'Overpass_Lato';
+           color: hsl(0, 0%, 100%);
+           font-size: 1.8rem !important;
+           font-weight: 600;
        }
 
-       .description_content {
-           font-family: "Overpass_Lato";
-       }
+       .headers {
+            display: flex;
+            justify-content: space-between;
 
-       .button_contaiter {
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           gap: 15px;
-           margin-top: 30px;
+            @media screen and (max-width: 776px) {
+                display: none;
+            }
+    
+           .header_container {
+               display: flex;
+               justify-content: space-between;
+               position: relative;
+        
+               .header_content {
+                   display: flex;
+                   justify-content: space-between;
+        
+                   .data_adm {
+                       display: flex;
+                       gap: 30px;
+                       align-items: center;
+                       justify-content: center;
+        
+                       .btn_option{
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           border: 0px solid;
+                           background-color: transparent;
+                           color: hsl(0, 0%, 100%);
+                           font-family: 'Overpass_Lato';
+                           cursor: pointer;
+                       }
+        
+                       .btn_option:hover {
+                           text-decoration: underline;
+                       }
+        
+                       .menu_content {
+                           font-size: 0.2rem !important;
+                           font-family: 'Overpass_Lato';
+                       }
+                   }
+        
+                }
+    
+                
+                
+            }
+            
+            .login_container {
+                position: absolute;
+                right: 0;
+    
+                .login {
+                    color: hsl(0, 0%, 100%);
+                    font-family: 'Overpass_Lato';
+                    text-decoration: none;
+    
+                    .login:hover {
+                        text-decoration: underline;
+                    }
+                }
+    
+                .btn_up {
+                    width: 95px;
+                    height: 35px;
+                    border: 0px solid;
+                    background-color: hsl(0, 0%, 100%);
+                    color: hsl(353, 100%, 62%);
+                    font-family: 'Overpass_Lato';
+                    font-weight: 600;
+                    border-radius: 50px;
+                    margin-left: 25px;    
+                    cursor: pointer;
+                }
+    
+                .btn_up:hover {
+                    background-color: hsl(355, 100%, 74%);
+                    color: hsl(0, 0%, 100%);
+                }
+    
+            }
+        }
 
-           .btn_start {
-               width: 110px;
-               height: 35px;
-               border: 0 solid;
-               background-color: hsl(0, 0%, 100%);
-               color: hsl(353, 100%, 62%);
-               border-radius: 50px;
-               font-family: 'Ubuntu_Regular';
-               font-size: 0.8rem !important;
-               font-weight: bold;
-               cursor: pointer;
-           }
-
-           .btn_start:hover {
-               background-color: hsl(355, 100%, 74%);
-               color: hsl(0, 0%, 100%);
-           }
-   
-           .btn_learn {
-               width: 110px;
-               height: 35px;
-               background-color: transparent;
-               border: 1px solid hsl(0, 0%, 100%);
-               color: hsl(0, 0%, 100%);
-               border-radius: 50px;
-               font-family: 'Ubuntu_Regular';
-               font-weight: 600;
-               cursor: pointer;
-
-           }
-
-           .btn_learn:hover {
-               background-color: hsl(0, 0%, 100%);
-               color: hsl(355, 100%, 74%);
-           }
-       }
+        .mobile-menu{
+            @media screen and (max-width: 776px) {
+                cursor: pointer;
+                display: block;
+            }
+        }
 
    }
+
+
+    .title_container {
+        text-align: center;
+        color: hsl(0, 0%, 100%);
+        margin-top: 80px;
+
+        .title_content {
+            font-family: 'Ubuntu_Regular';
+            font-size: 2.5rem !important;
+            line-height: 3rem !important;
+        }
+
+        .description_content {
+            font-family: "Overpass_Lato";
+        }
+
+        .button_contaiter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+
+            .btn_start {
+                width: 110px;
+                height: 35px;
+                border: 0 solid;
+                background-color: hsl(0, 0%, 100%);
+                color: hsl(353, 100%, 62%);
+                border-radius: 50px;
+                font-family: 'Ubuntu_Regular';
+                font-size: 0.8rem !important;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .btn_start:hover {
+                background-color: hsl(355, 100%, 74%);
+                color: hsl(0, 0%, 100%);
+            }
+
+            .btn_learn {
+                width: 110px;
+                height: 35px;
+                background-color: transparent;
+                border: 1px solid hsl(0, 0%, 100%);
+                color: hsl(0, 0%, 100%);
+                border-radius: 50px;
+                font-family: 'Ubuntu_Regular';
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            .btn_learn:hover {
+                background-color: hsl(0, 0%, 100%);
+                color: hsl(355, 100%, 74%);
+            }
+        }
+    }
 }
 

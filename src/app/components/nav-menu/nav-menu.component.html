@@ -1,0 +1,53 @@
+<div class="mobile-menu">
+   <div *ngIf="isMdenuBurguerOpen else menurBurguerClosed">
+      <button class="btn_close" (click)="handleCloseMenu()" mat-icon-button aria-label="close dialog" mat-dialog-close>
+         <mat-icon class="close">close</mat-icon>
+       </button>
+   </div>
+   <ng-template #menurBurguerClosed>
+      <div (click)="handleOpenMenu()">
+         <div class="line1"></div>
+         <div class="line2"></div>
+         <div class="line3"></div>
+      </div>
+   </ng-template>
+
+   <div *ngIf="isMdenuBurguerOpen">
+      <div class="window_main">
+         
+         <div class="btn_content">
+           
+            <button class="btn_menu_option" mat-button [matMenuTriggerFor]="productMenu">Product <mat-icon class="mat_icon_arrow">expand_more</mat-icon></button>
+
+            <mat-menu class="mat_menu_option" #productMenu="matMenu" yPosition="above">
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+
+            <button class="btn_menu_option" mat-button [matMenuTriggerFor]="companyMenu">Company <mat-icon class="mat_icon_arrow">expand_more</mat-icon></button>
+            <mat-menu class="mat_menu_option" #companyMenu="matMenu" yPosition="below">
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+
+            <button class="btn_menu_option" mat-button [matMenuTriggerFor]="connectMenu">Connect <mat-icon class="mat_icon_arrow">expand_more</mat-icon></button>
+            <mat-menu class="mat_menu_option" #connectMenu="matMenu" xPosition="before">
+              <button class="menu_content" mat-menu-item>Contact</button>
+              <button class="menu_content" mat-menu-item>Newsletter</button>
+              <button class="menu_content" mat-menu-item>Linkedin</button>
+            </mat-menu>
+
+            <hr class="line_horizontal"/>
+
+            <div class="login_menu_container">
+               <a class="login" href="">Login</a>
+               <button class="btn_up">Sign Up</button>
+            </div>
+
+         </div>
+
+      </div>
+   </div>
+
+</div>
+

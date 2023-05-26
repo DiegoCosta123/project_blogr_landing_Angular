@@ -1,54 +1,66 @@
 <header>
-   <div class="header_menu">
-     
-     <div class="header_container">
- 
-       <div class="header_content">
-         <h1 class="logo_content">Blogr</h1>
- 
-         <div class="data_adm">
-           <button class="btn_option" mat-button [matMenuTriggerFor]="productMenu">Product <mat-icon>expand_more</mat-icon></button>
-           <mat-menu #productMenu="matMenu" yPosition="above">
-             <button mat-menu-item>Item 1</button>
-             <button mat-menu-item>Item 2</button>
-           </mat-menu>
- 
-           <button class="btn_option" mat-button [matMenuTriggerFor]="companyMenu">Company <mat-icon>expand_more</mat-icon></button>
-           <mat-menu #companyMenu="matMenu" yPosition="below">
-             <button mat-menu-item>Item 1</button>
-             <button mat-menu-item>Item 2</button>
-           </mat-menu>
- 
-           <button class="btn_option" mat-button [matMenuTriggerFor]="connectMenu">Connect <mat-icon>expand_more</mat-icon></button>
-           <mat-menu #connectMenu="matMenu" xPosition="before">
-             <button class="menu_content" mat-menu-item>Contact</button>
-             <button class="menu_content" mat-menu-item>Newsletter</button>
-             <button class="menu_content" mat-menu-item>Linkedin</button>
-           </mat-menu>
- 
-         </div>
-       </div>
- 
-       <div class="login_container">
-         <a class="login" href="">Login</a>
-         <button class="btn_up">Sign Up</button>
-       </div>
-         
-     </div>
- 
-     <div class="title_container">
- 
-       <h1 class="title_content">A modern publishing platform</h1>
-       <p class="description_content">Grow your audience and build your online brand</p>
- 
-       <div class="button_contaiter">
-         <button class="btn_start">Start for Free</button>
-         <button class="btn_learn">Learn More</button>
-       </div>
-       
-     </div>
- 
-   </div>
- </header>
- 
- 
+  <div class="header_menu">
+    
+
+    <div class="menu_main">
+      <h1 class="logo_content">Blogr</h1>
+      <div class="headers">
+        
+        <div class="header_container">
+  
+          <div class="header_content">
+            <div class="data_adm">
+  
+              <button class="btn_option" mat-button [matMenuTriggerFor]="productMenu">Product <mat-icon>expand_more</mat-icon></button>
+  
+              <mat-menu #productMenu="matMenu" yPosition="above">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+              </mat-menu>
+  
+              <button class="btn_option" mat-button [matMenuTriggerFor]="companyMenu">Company <mat-icon>expand_more</mat-icon></button>
+              <mat-menu #companyMenu="matMenu" yPosition="below">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+              </mat-menu>
+  
+              <button class="btn_option" mat-button [matMenuTriggerFor]="connectMenu">Connect <mat-icon>expand_more</mat-icon></button>
+              <mat-menu #connectMenu="matMenu" xPosition="before">
+                <button class="menu_content" mat-menu-item>Contact</button>
+                <button class="menu_content" mat-menu-item>Newsletter</button>
+                <button class="menu_content" mat-menu-item>Linkedin</button>
+              </mat-menu>
+  
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="login_container">
+          <a class="login" href="">Login</a>
+          <button class="btn_up">Sign Up</button>
+        </div>
+
+      </div>
+
+      <!-- Menu Hamburguer -->
+      <app-nav-menu class="mobile-menu"></app-nav-menu>
+
+    </div>
+
+
+    <div class="title_container">
+
+      <h1 class="title_content">A modern publishing platform</h1>
+      <p class="description_content">Grow your audience and build your online brand</p>
+
+      <div class="button_contaiter">
+        <button class="btn_start">Start for Free</button>
+        <button class="btn_learn">Learn More</button>
+      </div>
+      
+    </div>
+
+  </div>
+</header>
+
