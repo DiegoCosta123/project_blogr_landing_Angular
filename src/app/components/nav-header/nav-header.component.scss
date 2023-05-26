@@ -31,10 +31,10 @@
 
    .menu_main {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         position: relative;
 
-        @media screen and (max-width: 814px) {
+        @media screen and (max-width: 644px) {
             display: flex;
             justify-content: space-between;
         }
@@ -48,9 +48,9 @@
 
        .headers {
             display: flex;
-            justify-content: space-between;
+            margin-left: 30px;
 
-            @media screen and (max-width: 776px) {
+            @media screen and (max-width: 644px) {
                 display: none;
             }
     
